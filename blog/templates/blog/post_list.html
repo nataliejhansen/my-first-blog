@@ -1,15 +1,17 @@
 <html>
   <head>
-      <title> Natalie's blog </title>
+      <title> natalie's blog </title>
   </head>
   <body>
-    <div>
+      <div>
         <h1> Natalie's Blog </h1>
     </div>
-    <div>
-        <p>Hi there! </p>
-        <p>I made this blog from scratch - <strong> and it works! </strong> </p>
-        <p> <a href="http://wwww.twitter.com/missnataliej"> Follow me on Twitter </a> <p>
-   </div>
+      {% for post in posts %}
+      <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+      {% endfor %}
   </body>
 </hmtl>
