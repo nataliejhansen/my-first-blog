@@ -3,4 +3,3 @@ __pycache__
 dgprojectvenv
 db.sqlite3
 .DS_Store
-myvenv
